@@ -1,4 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/*=== abstracts css start === */
+@font-face {
+  font-family: century-gothic;
+  src: url(../fonts/GOTHIC.TTF);
+}
+
+@font-face {
+  font-family: century-gothic-bold;
+  src: url(../fonts/GOTHICB0.TTF);
+}
+
+@font-face {
+  font-family: Monotype-Corsiva;
+  src: url(../fonts/Monotype-Corsiva.ttf);
+}
+
+/*===// end of abstracts css === */
+/*=== base css start === */
 * {
   margin: 0;
   padding: 0;
@@ -6,35 +23,141 @@
   box-sizing: border-box;
 }
 
-::after, ::before {
+::after,
+::before {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+address,
+strong,
+i {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: century-gothic;
   color: #000;
 }
 
-/*=== abstracts css start === */
-/*===// end of abstracts css === */
-/*=== base css start === */
 /*===// end of base css === */
-/*=== components css start === */
-/*===// end of components css === */
-/*=== layout css start === */
-/*===// end of layout css === */
-/*=== pages start === */
-/*===// end of pages  === *//*# sourceMappingURL=style.css.map */
+
+
+/*=== utility css start === */
+.section-heading-1 {
+  font-family: century-gothic-bold;
+  color: #605e5e;
+}
+
+.section-heading-2 {
+  color: #605e5e;
+}
+
+@media screen and (min-width: 1199px) {
+  .section-heading-1 {
+    font-size: 60px !important;
+  }
+
+  .section-heading-2 {
+    font-size: 48px !important;
+  }
+}
+
+.sub-heading {
+  color: #605e5e;
+}
+
+.gradient-blue-btn {
+  color: #fff;
+  background-image: -moz-linear-gradient(90deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
+}
+
+/*===// end of utility css === */
+
+
+/*=== navbar css start === */
+.navbar.navbar-dark {
+  background-image: -moz-linear-gradient(90deg, rgb(6, 60, 141) 0%, rgb(5, 22, 47) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(6, 60, 141) 0%, rgb(5, 22, 47) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(6, 60, 141) 0%, rgb(5, 22, 47) 100%);
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar.navbar-dark .container {
+    max-width: 90%;
+  }
+}
+
+
+
+.navbar.navbar-dark .nav-link {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-brand img {
+    max-width: 200px;
+  }
+}
+
+/*===// end of navbar css === */
+
+
+/*=== banner css start === */
+.banner {
+  background: url(../images/wavy.png) no-repeat center center/cover;
+}
+
+.banner img {
+  max-width: 50vw;
+  margin: auto;
+}
+
+/*===// end of banner css === */
+
+
+/*=== mission css start === */
+.mission .mission-blockquote {
+  font-family: Monotype-Corsiva;
+}
+
+/*===// end of mission css === */
+
+
+/*=== footer css start === */
+.footer {
+  background-image: -moz-linear-gradient(90deg, rgb(246, 97, 20) 0%, rgb(180, 25, 0) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(246, 97, 20) 0%, rgb(180, 25, 0) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(246, 97, 20) 0%, rgb(180, 25, 0) 100%);
+}
+
+@media screen and (max-width: 991px) {
+  .footer .footer-logo {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+/*===// end of footer css === */
