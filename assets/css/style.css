@@ -91,6 +91,7 @@ body {
   background-image: -moz-linear-gradient(90deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
   background-image: -webkit-linear-gradient(90deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
   background-image: -ms-linear-gradient(90deg, rgb(3, 108, 142) 0%, rgb(5, 59, 94) 100%);
+  padding: 12px 30px !important;
 }
 
 /*===// end of utility css === */
